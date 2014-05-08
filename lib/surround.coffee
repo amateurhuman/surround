@@ -1,13 +1,10 @@
-SurroundView = require './surround-view'
-
 module.exports =
-  surroundView: null
+  activate: ->
+    atom.workspaceView.command "surround:wrap", => @wrap()
 
-  activate: (state) ->
-    @surroundView = new SurroundView(state.surroundViewState)
+  wrap: ->
+    # This assumes the active pane item is an editor
+    editor = atom.workspace.activePaneItem
+    selection = editor.getSelection()
 
-  deactivate: ->
-    @surroundView.destroy()
-
-  serialize: ->
-    surroundViewState: @surroundView.serialize()
+    selection.insertText("[#{selection.getText()}]")
