@@ -8,4 +8,7 @@
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
 '.editor':
-  'cmd-alt-a': 'surround:wrap'
+  'cmd-alt-s': 'surround:toggle'
+
+'.surround-mode':
+  '[':      'surround:wrap-square-brackets'

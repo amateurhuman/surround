@@ -3,7 +3,7 @@
   "main": "./lib/surround",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "activationEvents": ["surround:wrap"],
+  "activationEvents": ["surround:toggle", "surround:wrap-square-brackets"],
   "repository": "https://github.com/atom/surround",
   "license": "MIT",
   "engines": {
