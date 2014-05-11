@@ -10,5 +10,7 @@
 '.editor':
   'cmd-alt-s': 'surround:toggle'
 
-'.surround-mode':
-  '[':      'surround:wrap-square-brackets'
+'.surround .active .editor.surround-mode':
+  'escape': 'surround:toggle'
+  '[': 'surround:wrap-square-brackets'
+  '{': 'surround:wrap-curly-braces'
