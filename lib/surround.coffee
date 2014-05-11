@@ -3,6 +3,9 @@ module.exports =
     atom.workspaceView.command "surround:toggle",               => @toggle()
     atom.workspaceView.command "surround:wrap-square-brackets", => @wrap("[", "]")
     atom.workspaceView.command "surround:wrap-curly-braces",    => @wrap("{", "}")
+    atom.workspaceView.command "surround:wrap-parens",          => @wrap("(", ")")
+    atom.workspaceView.command "surround:wrap-single-quotes",   => @wrap("'", "'")
+    atom.workspaceView.command "surround:wrap-double-quotes",   => @wrap('"', '"')
 
   toggle: ->
     atom.workspaceView.toggleClass 'surround'

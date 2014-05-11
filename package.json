@@ -6,7 +6,10 @@
   "activationEvents": [
     "surround:toggle",
     "surround:wrap-square-brackets",
-    "surround:wrap-curly-braces"
+    "surround:wrap-curly-braces",
+    "surround:wrap-parens",
+    "surround:wrap-single-quotes",
+    "surround:wrap-double-quotes"
   ],
   "repository": "https://github.com/atom/surround",
   "license": "MIT",

@@ -12,5 +12,8 @@
 
 '.surround .active .editor.surround-mode':
   'escape': 'surround:toggle'
-  '[': 'surround:wrap-square-brackets'
-  '{': 'surround:wrap-curly-braces'
+  '[':      'surround:wrap-square-brackets'
+  '{':      'surround:wrap-curly-braces'
+  '(':      'surround:wrap-parens'
+  "'":      'surround:wrap-single-quotes'
+  '"':      'surround:wrap-double-quotes'
