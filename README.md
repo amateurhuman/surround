@@ -1,5 +1,9 @@
-# surround package
+# Surround for Atom
 
-A short description of your package.
+Surrounding selections with characters since 2014. This concept is entirely stolen from tpope's Surround and isn't even a shadow of its functionality yet.
 
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+**Warning:** This is not an officially published package yet and is under heavy development, it is not recommended that you become too dependent upon it yet.
+
+## Usage
+
+Enter *surround-mode* with `cmd+option+s` and select `[ { ( < ' "` to surrond the selection with the respective characters. When there is no selection, the surround set will simply be inserted at the cursor position.

@@ -1,8 +1,8 @@
 {
   "name": "surround",
   "main": "./lib/surround",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.0.1",
+  "description": "Surround a selection with some characters",
   "activationEvents": [
     "surround:toggle",
     "surround:wrap-square-brackets",
