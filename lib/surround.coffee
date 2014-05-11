@@ -6,6 +6,8 @@ module.exports =
     atom.workspaceView.command "surround:wrap-parens",          => @wrap("(", ")")
     atom.workspaceView.command "surround:wrap-single-quotes",   => @wrap("'", "'")
     atom.workspaceView.command "surround:wrap-double-quotes",   => @wrap('"', '"')
+    atom.workspaceView.command "surround:wrap-angle-brackets",  => @wrap("<", ">")
+    atom.workspaceView.command "surround:unwrap",               => @unwrap
 
   toggle: ->
     atom.workspaceView.toggleClass 'surround'
@@ -18,4 +20,11 @@ module.exports =
     selection = editor.getSelection()
 
     selection.insertText("#{firstChar}#{selection.getText()}#{lastChar}")
+    @toggle()
+
+  unwrap: ->
+    editor = atom.workspace.activePaneItem
+    selection = editor.getSelection()
+
+    selection.insertText("#{selection.getText()}")
     @toggle()

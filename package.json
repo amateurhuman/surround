@@ -9,7 +9,9 @@
     "surround:wrap-curly-braces",
     "surround:wrap-parens",
     "surround:wrap-single-quotes",
-    "surround:wrap-double-quotes"
+    "surround:wrap-double-quotes",
+    "surround:wrap-angle-brackets",
+    "surround:unwrap"
   ],
   "repository": "https://github.com/atom/surround",
   "license": "MIT",

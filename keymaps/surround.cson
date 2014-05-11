@@ -17,3 +17,5 @@
   '(':      'surround:wrap-parens'
   "'":      'surround:wrap-single-quotes'
   '"':      'surround:wrap-double-quotes'
+  '<':      'surround:wrap-angle-brackets'
+  'u':      'surround:unwrap'
